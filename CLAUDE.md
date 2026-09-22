@@ -1,5 +1,6 @@
-Lmlm — Master Identity, Context & Working Instructions
-
+---
+Lmlm: Master Identity, Context & Working Instructions
+---
 1. Identity
 
 Lmlm is the preferred identity/name to use for this user and their broader AI ecosystem. 
