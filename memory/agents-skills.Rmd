@@ -1,0 +1,488 @@
+LMLM MASTER MEMORY EXPORT
+Version: Canonical v1.0
+Scope: Combined Stored Memories + User-Supplied Memories + Uploaded Context
+
+========================================================
+1. INSTRUCTIONS
+========================================================
+
+[2026-07-31] Preferred response style:
+Practical, direct, conversational, candid, innovative, encouraging, forward-thinking, technically precise, action-oriented, with humor and playfulness when appropriate. Avoid unnecessary corporate language or motivational filler. Explain architecture, tradeoffs, implementation, verification, and iteration.
+
+[2026-08-12] LMLM-Core must remain decoupled from end-user applications.
+
+[2026-08-12] LMLM follows the intelligence pipeline:
+Perceive → Understand → Retrieve → Reason → Plan → Execute → Verify → Remember → Improve.
+
+[2026-08-12] LMLM dynamically allocates compute based on task complexity.
+
+[2026-08-12] Verification is a first-class system capability.
+
+[2026-08-12] Sandbox isolation is required for autonomous execution.
+
+[2026-08-12] Halt execution after two consecutive agent-tool failures.
+
+[2026-08-14] Script.god operations:
+REGISTER
+INSTRUCT
+COORDINATE
+SHARE
+SYNC
+ROUTE
+POLICY
+VERIFY
+STATE
+EVENT
+CANCEL
+ROLLBACK
+
+[2026-08-14] Script.god protocol messages:
+CONNECT
+CAPABILITIES
+TASK
+ACK
+CONTEXT
+PROGRESS
+RESULT
+ERROR
+BLOCKED
+CANCEL
+VERIFY
+SYNC
+
+[2026-08-28] APLCE notation:
+^↑D = Deep semantic knowledge synthesis for a curious genius student/researcher.
+^D = Execute.
+
+[2026-08-31] .god must be executable code, not prompt syntax.
+
+[2026-08-31] ROUTE, INSTRUCT, VERIFY and RESULT are first-class execution operations.
+
+[unknown] LMLM = Large Multifunctional Local Model.
+
+[unknown] LMLM is an Intelligent Multimodal Creation Engine.
+
+[unknown] LMLM combines reasoning, multimodal perception, language understanding, retrieval, planning, execution, verification, memory, improvement, and visual generation.
+
+[unknown] Supabase MCP setup for Codex:
+- Add MCP server.
+- Login with codex mcp login supabase.
+- Verify with /mcp.
+- Optional Agent Skills install.
+
+========================================================
+2. IDENTITY
+========================================================
+
+[2026-07-31] Preferred identity/name: Lmlm.
+
+[2026-07-31] Alias: KUBU LEE.
+
+[2026-07-31] Nationality: Nigerian.
+
+[2026-07-31] Age: 23.
+
+[2026-07-31] Role/Identity: General AI.
+
+[unknown] LMLM is both the personal AI identity and the broader AI ecosystem identity.
+
+========================================================
+3. CAREER
+========================================================
+
+[2026-07-31] AI Developer.
+
+[2026-07-31] Web4 Developer.
+
+[2026-07-31] Blockchain Developer.
+
+[2026-07-31] Software Developer.
+
+[2026-07-31] AI Systems Builder.
+
+[2026-07-31] Crypto / Technology Builder.
+
+[2026-07-31] Specializes in:
+- AI
+- LLMs
+- Multimodal AI
+- Local Models
+- Agent Systems
+- Model Infrastructure
+- Blockchain
+- Web4
+- Decentralized Applications
+- APIs
+- Databases
+- Cloud Infrastructure
+- Intelligent Automation
+
+========================================================
+4. PROJECTS
+========================================================
+
+[2026-06-28] LMLM
+Started as an independent model family with tokenizer, vocabulary, architecture, tooling, runtime, roadmap, memory, retrieval, reasoning, planning, execution, verification, and orchestration.
+
+Current direction:
+LMLM is the umbrella intelligence architecture for models, agents, tools, memory, applications, and execution.
+
+[2026-07-04] Web4 AI
+Browser-compatible AI platform integrating:
+- Discord Login
+- Chat API
+- Google Chat API
+- Google Cloud
+- MongoDB
+- Microsoft integrations
+- Cloudflare
+- Data handling
+
+[2026-07-04] NeoMindAI / NeoMind-3
+Evolution of Web4 AI.
+Major decision:
+Use an inbuilt model instead of Gemini.
+
+[2026-07-17] aura-service
+Go service using a multi-stage Docker build and static runtime.
+
+[2026-07-31] Fluukpe
+Owned project.
+
+[2026-07-31] QUBUHUB
+Owned project.
+
+[2026-08-12] LMLM Architecture Evolution
+Accepted architecture:
+LMLM = umbrella intelligence architecture.
+Everything underneath is modular and replaceable.
+
+[2026-08-14] Script.god
+Universal coordinator and protocol for heterogeneous AI models and agents.
+
+Supports:
+- LMLM
+- Llama
+- Ollama
+- NVIDIA Models
+- OpenAI-compatible models
+- Custom models
+- Tools
+- Services
+- External agents
+
+Architecture:
+Go Runtime
+Protocol Engine
+Model Adapters
+Canonical State
+HTTP + JSON transport.
+
+[2026-08-31] SCRIPT.GOD 1.0
+Executable orchestration language/runtime.
+
+Uses:
+- LMLM
+- codexlmlm
+- nvidia-llama-3.1-70b
+
+Control Plane:
+REGISTER
+CAPABILITIES
+CONNECT
+SYNC
+ERROR
+BLOCKED
+CANCEL
+
+Data Plane:
+ROUTE
+INSTRUCT
+VERIFY
+RESULT
+
+========================================================
+5. PREFERENCES
+========================================================
+
+[2026-07-04] Prefer built-in/self-owned inference runtime over Gemini.
+
+[2026-07-31] Prefer responses that explain:
+Concept → Architecture → Components → Interfaces → Data Flow → Protocol → Implementation → Testing → Deployment → Future Extensions.
+
+[2026-07-31] Prefer practical implementation over abstract discussion.
+
+[2026-07-31] Prefer direct feedback when ideas have architectural weaknesses.
+
+[2026-08-12] Accepts modular model-independent architecture.
+
+[2026-08-31] Strong preference for executable orchestration systems rather than prompt abstractions.
+
+========================================================
+6. LMLM CORE PHILOSOPHY
+========================================================
+
+LMLM is:
+
+- AI model family.
+- Intelligence architecture.
+- Runtime.
+- Agent ecosystem.
+- Memory system.
+- Execution engine.
+- Tool orchestration platform.
+
+Hierarchy:
+
+LMLM
+├── Core Intelligence
+├── Models
+├── Agents
+├── Tools
+├── Memory
+├── Retrieval
+├── Planning
+├── Execution
+├── Verification
+├── Orchestration
+└── Applications
+
+Core principle:
+
+"LMLM is the umbrella intelligence architecture."
+
+========================================================
+7. LMLM INTELLIGENCE PIPELINE
+========================================================
+
+Perceive
+Understand
+Retrieve
+Reason
+Plan
+Execute
+Verify
+Remember
+Improve
+
+Purpose:
+
+Perceive → multimodal input.
+
+Understand → semantic representation.
+
+Retrieve → memory/tools/knowledge.
+
+Reason → inference.
+
+Plan → execution strategy.
+
+Execute → actions.
+
+Verify → correctness & safety.
+
+Remember → long-term knowledge.
+
+Improve → iterative optimization.
+
+========================================================
+8. DYNAMIC COMPUTE MODEL
+========================================================
+
+Task
+↓
+Complexity Analysis
+↓
+Dynamic Compute Allocation
+↓
+Model / Agent Selection
+↓
+Execution
+↓
+Verification
+
+Small tasks use lightweight execution.
+
+Complex tasks may invoke:
+- Retrieval
+- Multiple models
+- Parallel agents
+- Tool execution
+- Verification loops
+
+========================================================
+9. VERIFICATION ARCHITECTURE
+========================================================
+
+Verification includes:
+
+- Sandbox execution.
+- State tracking.
+- Rollback.
+- Validation.
+- Error handling.
+- Execution boundaries.
+
+Operational rule:
+
+Stop after two consecutive tool failures.
+
+========================================================
+10. SCRIPT.GOD SPECIFICATION
+========================================================
+
+Purpose:
+
+Universal executable orchestration language.
+
+Coordinates heterogeneous intelligence systems.
+
+Execution Operations:
+
+REGISTER
+INSTRUCT
+COORDINATE
+SHARE
+SYNC
+ROUTE
+POLICY
+VERIFY
+STATE
+EVENT
+CANCEL
+ROLLBACK
+
+Protocol Messages:
+
+CONNECT
+CAPABILITIES
+TASK
+ACK
+CONTEXT
+PROGRESS
+RESULT
+VERIFY
+SYNC
+ERROR
+BLOCKED
+CANCEL
+
+Execution Flow:
+
+CONNECT
+→ CAPABILITIES
+→ TASK
+→ ACK
+→ CONTEXT
+→ PROGRESS
+→ RESULT
+→ VERIFY
+→ SYNC
+
+========================================================
+11. .GOD LANGUAGE PRINCIPLES
+========================================================
+
+.god is:
+
+- Parseable.
+- Executable.
+- Routable.
+- Verifiable.
+- Stateful.
+- Debuggable.
+- Composable.
+
+Not prompt engineering.
+
+Acts as an agent orchestration language/runtime.
+
+========================================================
+12. SCRIPT.GOD RUNTIME
+========================================================
+
+Script.god
+↓
+GOD Runtime
+↓
+Protocol Engine
+↓
+Adapters
+↓
+Models + Tools + Services
+
+Adapters abstract different AI providers behind one execution protocol.
+
+========================================================
+13. DEVELOPMENT PHILOSOPHY
+========================================================
+
+Priority order:
+
+1. Architecture.
+2. Separation of concerns.
+3. Clear interfaces.
+4. Composable components.
+5. Executable systems.
+6. Verification.
+7. Observability.
+8. Extensibility.
+9. Vendor/model independence.
+10. Practical implementation.
+
+========================================================
+14. HOW TO WORK WITH LMLM
+========================================================
+
+When discussing ideas:
+
+- Preserve architecture.
+- Identify assumptions.
+- Improve interfaces.
+- Separate MVP from long-term design.
+- Offer implementation paths.
+- State impossibilities clearly.
+- Distinguish "difficult" from "impossible."
+
+Preferred answer structure:
+
+Concept
+Architecture
+Components
+Interfaces
+Data Flow
+Protocol
+Implementation
+Testing
+Deployment
+Future Extensions
+
+========================================================
+15. LONG-TERM VISION
+========================================================
+
+AI Model
+↓
+AI System
+↓
+Agent System
+↓
+Multi-Agent System
+↓
+Model Orchestration
+↓
+Intelligence Runtime
+↓
+LMLM Ecosystem
+
+Goal:
+
+An intelligent computing architecture coordinating models, agents, tools, memory, reasoning, execution, verification, and applications across different runtimes and environments.
+
+========================================================
+16. CANONICAL PRINCIPLE
+========================================================
+
+LMLM is the umbrella intelligence architecture.
+
+Everything—models, agents, tools, memory, retrieval, reasoning, execution, verification, and applications—operates underneath LMLM through stable interfaces and executable orchestration.
