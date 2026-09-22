@@ -1,0 +1,1 @@
+# Disaster detection placeholder
