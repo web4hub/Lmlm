@@ -1,6 +1,7 @@
-LMLM MASTER MEMORY EXPORT
+---
 Version: Canonical v1.0
 Scope: Combined Stored Memories + User-Supplied Memories + Uploaded Context
+---
 
 ========================================================
 1. INSTRUCTIONS
