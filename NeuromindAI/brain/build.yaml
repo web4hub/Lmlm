@@ -1,0 +1,52 @@
+# build.yaml - Generic build manifest for the Brain repo
+build_commands:
+  - python -m venv .venv
+  - . .venv/bin/activate
+  - python -m pip install --upgrade pip setuptools wheel
+  - if [ -f "./requirements.txt" ]; then pip install -r ./requirements.txt; fi
+  - |
+    # Optional: install common ML libs; adjust or remove if using GPU/Jetson wheels
+    pip install --no-deps torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu || true
+  - pip install -e . || true
+  - mkdir -p logs
+environment_variables:
+  PYTHONUNBUFFERED: '1'
+  BRAIN_ENV: development
+  # Add runtime env variables here, for example:
+  # ROS_DOMAIN_ID: '0'
+  # NEUROBOT_CONFIG: './config/neurobot.yaml'
+external_package_dirs:
+  - ./libs
+  - ./third_party
+model_metadata:
+  description: "Neurobot Brain project"
+  version: "0.1.0"
+  authors:
+    - "Web4application"
+model_name: BRAIN
+python_version: "3.11"
+requirements:
+  - -r ./requirements.txt
+  - numpy
+  - opencv-python-headless
+  - scikit-learn
+  - pyyaml
+  - nengo
+  - torch
+  - torchvision
+  - torchaudio
+requirements_file: ./requirements.txt
+resources:
+  accelerator: null
+  cpu: '2'
+  memory: 4Gi
+  use_gpu: false
+secrets: {}
+system_packages:
+  - build-essential
+  - cmake
+  - libssl-dev
+  - libffi-dev
+  - python3-dev
+  - ffmpeg
+  - libglib2.0-0

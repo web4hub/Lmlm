@@ -1,0 +1,36 @@
+# Dockerfile.ros2 - ROS 2 Humble (Ubuntu Jammy) base for Brain repo
+FROM ros:humble-ros-base-jammy
+
+ENV DEBIAN_FRONTEND=noninteractive
+ENV PYTHONUNBUFFERED=1
+ENV BRAIN_ENV=ros2
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+      python3-pip python3-venv python3-distutils build-essential cmake git wget \
+      ffmpeg libglib2.0-0 libssl-dev libffi-dev && \
+    rm -rf /var/lib/apt/lists/*
+
+# Create workspace and copy repo
+WORKDIR /workspace
+COPY . /workspace/src/brain
+
+# Install system dependencies for ROS packages if needed
+# e.g., rosdep update & install - uncomment if using rosdep & package.xml manifests
+# RUN rosdep update && rosdep install --from-paths src --ignore-src -r -y
+
+# Create Python venv for Python deps
+RUN python3 -m venv /opt/venv && \
+    /opt/venv/bin/pip install --upgrade pip setuptools wheel && \
+    if [ -f "/workspace/src/brain/requirements.txt" ]; then /opt/venv/bin/pip install -r /workspace/src/brain/requirements.txt; fi && \
+    /opt/venv/bin/pip install -e /workspace/src/brain || true
+
+ENV PATH="/opt/venv/bin:${PATH}"
+ENV ROS_DOMAIN_ID=0
+
+# Optionally, build the ROS2 workspace if packages are present
+# Uncomment if the repo contains ROS2 packages with package.xml / CMakeLists
+# RUN . /opt/ros/humble/setup.sh && \
+#     colcon build --symlink-install
+
+EXPOSE 8080
+CMD ["bash", "-lc", ". /opt/ros/humble/setup.sh && cd /workspace && bash"]

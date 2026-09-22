@@ -1,0 +1,49 @@
+version: "3.8"
+
+services:
+  lucee:
+    image: lucee/lucee:5.4
+    container_name: brain_cfml
+    ports:
+      - "8500:8888"
+    environment:
+      - LUCEE_SERVER_ADMIN_PASSWORD=admin
+      - PYTHON_SERVICE_URL=http://python_ai:5000
+    volumes:
+      - ./cfml:/var/www
+    depends_on:
+      - python_ai
+
+  python_ai:
+    build:
+      context: ./python
+    container_name: brain_python
+    command: python ai_core.py
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./python:/app
+    working_dir: /app
+    environment:
+      - PYTHONUNBUFFERED=1
+
+  db:
+    image: postgres:15
+    container_name: brain_db
+    restart: always
+    environment:
+      POSTGRES_USER: brain
+      POSTGRES_PASSWORD: secret
+      POSTGRES_DB: brain_ai
+    ports:
+      - "5432:5432"
+    volumes:
+      - brain_db_data:/var/lib/postgresql/data
+
+services:
+  backend:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
