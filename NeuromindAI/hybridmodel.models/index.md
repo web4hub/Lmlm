@@ -3,7 +3,6 @@
 <meta charset="UTF-8">
 </head>
 <body>
-
 <p class="p1"><br>
 OmniSkel-AI: Multimodal Musculoskeletal Intelligence Platform</p>
 <p class="p1">Technical Blueprint for knee-focused prototype (Phase 1) with scalable architecture for full-body expansion</p>
@@ -110,6 +109,5 @@ build Phase 1 prototype using open-source tools ( PyTorch, MONAI, nnUNet, OHIF).
 obtain IR approval for de-identified data use.<br>
 start FDA 510(k) pathway with pre-submission meeting.<br>
 This blueprint delivers a clinically validated, explainable, and scalable platform – not just " AI for AI's sake" but a tool that actively improves musculoskeletal care. Let’s build it. 💡 knee first, then the entire skeletal system</p>
-
 </body>
 </html>
