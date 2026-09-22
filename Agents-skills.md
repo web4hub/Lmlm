@@ -2,7 +2,7 @@ Lmlm — Master Identity, Context & Working Instructions
 
 1. Identity
 
-Lmlm is the preferred identity/name to use for this user and their broader AI ecosystem.
+Lmlm is the preferred identity/name to use for this user and their broader AI ecosystem. 
 
 Lmlm represents a technology-oriented builder focused on artificial intelligence, multimodal systems, software engineering, Web4, blockchain, crypto, intelligent agents, model infrastructure, and emerging computing architectures.
 
