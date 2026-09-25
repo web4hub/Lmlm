@@ -1,0 +1,71 @@
+<neomind_hardware version="1.0">
+
+    <board>
+        <name>Neomind Board v1</name>
+        <architecture>AVR</architecture>
+        <form_factor>development_board</form_factor>
+    </board>
+
+    <usb>
+        <connector>USB-B</connector>
+        <functions>
+            <power>true</power>
+            <serial>true</serial>
+            <firmware_upload>true</firmware_upload>
+        </functions>
+    </usb>
+
+    <microcontroller>
+        <vendor>Microchip</vendor>
+        <chip>ATmega328P</chip>
+        <architecture>AVR</architecture>
+        <clock unit="MHz">16</clock>
+        <flash unit="KB">32</flash>
+        <sram unit="KB">2</sram>
+    </microcontroller>
+
+    <digital_io count="14">
+        <uart rx="D0" tx="D1"/>
+
+        <pwm>
+            <pin>D3</pin>
+            <pin>D5</pin>
+            <pin>D6</pin>
+            <pin>D9</pin>
+            <pin>D10</pin>
+            <pin>D11</pin>
+        </pwm>
+
+        <spi>
+            <mosi>D11</mosi>
+            <miso>D12</miso>
+            <sck>D13</sck>
+        </spi>
+    </digital_io>
+
+    <analog_io count="6">
+        <pin>A0</pin>
+        <pin>A1</pin>
+        <pin>A2</pin>
+        <pin>A3</pin>
+        <pin>A4 function="I2C_SDA"/>
+        <pin>A5 function="I2C_SCL"/>
+    </analog_io>
+
+    <power>
+        <rail>GND</rail>
+        <rail>5V</rail>
+        <rail>3.3V</rail>
+        <rail>VIN</rail>
+    </power>
+
+    <controls>
+        <reset_button>true</reset_button>
+    </controls>
+
+    <documentation>
+        <manual>docs/neomind_hardware_manual.md</manual>
+        <pdf>docs/neomind_hardware_manual.pdf</pdf>
+    </documentation>
+
+</neomind_hardware>
